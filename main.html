@@ -1,26 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Zach Vincent</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script defer src="app.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="jumbotron">
-        <h1 class="name fadein">Zachary Vincent</h1>
+      <img
+        class="jumbotron-img"
+        src="https://www.animotica.com/blog/wp-content/uploads/2020/06/16-92-1024x576.jpg"
+      />
+      <div class="wrapper">
+        <h1 class="name">Zachary Vincent</h1>
+        <h2 class="title">Computer Engineering Student</h2>
+      </div>
 
-        <div id="menu-background-pattern" class="fadein"></div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6 arrow-down"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75"
+        />
+      </svg>
+
+      <div id="menu-background-pattern"></div>
     </div>
-</body>
+
+    <div class="intro">
+      <p>
+        Hi! I'm Zach and I'm a second year computer engineering student at the
+        University of Notre Dame. I'm currently working as the team lead for
+        NASA-funded research at the University.
+      </p>
+      <p>
+        I work on a lot of passion projects and I'd love for you to take a look
+        at them:
+      </p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h4>3D render engine</h4>
+
+        <p>
+          The final project for my Fundamentals of Computing class. This project
+          pulled together my knoweldge of linear algebra and challenged my
+          ability to create multiple levels of abstraction to make a small game
+          engine.
+        </p>
+
+        <div class="tags">
+          <span class="tag">C</span>
+        </div>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 arrow-up-right"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
 </html>

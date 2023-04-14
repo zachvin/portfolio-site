@@ -180,8 +180,11 @@ CARDS
   border: 2px solid rgba(255, 255, 255, 0.7);
   width: clamp(20rem, 15vw, 22rem);
   height: clamp(25rem, 20vw, 27rem);
-  background-image: linear-gradient(135deg, #E4DEE4, #E4DEE4, #81f495);
-  background-size: 400%;
+  background-image: linear-gradient(135deg, #121619, #121619, #81f495);
+  
+  /* E4DEE4 */
+
+  background-size: 500%;
   background-position: 0% 0%;
   padding: 1rem;
 
@@ -192,48 +195,49 @@ CARDS
 }
 
 .card h4 {
-    font-family: 'Space Mono', sans-serif;
-    font-size: 2rem;
-    line-height: 1.8rem;
+  color: #E4DEE4;
+  font-family: 'Space Mono', sans-serif;
+  font-size: 2rem;
+  line-height: 1.8rem;
 }
 
 .card p {
-    margin-top: 1.2rem;
+  margin-top: 1.2rem;
 
-    line-height: 2rem;
-    font-size: 1rem;
-    opacity: 0;
-    
-    transition: all 250ms ease;
+  line-height: 2rem;
+  font-size: 1rem;
+  opacity: 0;
+  
+  transition: all 250ms ease;
 }
 
 .card:hover > p {
-    margin-top: 1rem;
-    opacity: 1;
+  margin-top: 1rem;
+  opacity: 1;
 }
 
 .tags {
-    position: absolute;
-    display: flex;
-    bottom: 1rem;
-    left: 1rem;
+  position: absolute;
+  display: flex;
+  bottom: 1rem;
+  left: 1rem;
 }
 
 .tag {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    margin-right: 0.6rem;
-    background-color: #c2a6de;
-    border-radius: 5px;
-    border: 2px solid rgba(112, 61, 164, 0.5);
+  margin-right: 0.6rem;
+  background-color: #c2a6de;
+  border-radius: 5px;
+  border: 2px solid rgba(112, 61, 164, 0.5);
 
-    color: black;
-    font-size: 0.6rem;
-    text-transform: uppercase;
+  color: black;
+  font-size: 0.6rem;
+  text-transform: uppercase;
 
-    padding: 0.3rem 0.6rem;
+  padding: 0.3rem 0.6rem;
 }
 
 .card:hover {
@@ -241,6 +245,10 @@ CARDS
   background-position: 100% 100%;
   cursor: pointer;
   transform: scale(102%, 102%);
+}
+
+.card:active {
+  transform: scale(99.5%, 99.5%);
 }
 
 .arrow-up-right {
@@ -257,7 +265,7 @@ CARDS
 }
 
 .card:hover > .arrow-up-right {
-    bottom: 2px;
-    right: 2px;
-    opacity: 1;
+  bottom: 2px;
+  right: 2px;
+  opacity: 1;
 }

@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Space+Mono&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #121619;
+
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+
+  overflow-x: hidden;
+  position: relative;
+}
+
+.back {
+  position: absolute;
+  color: #81f495;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 4rem;
+
+  font-size: 0.7rem;
+  text-decoration: none;
+
+  top: 1.2rem;
+  left: 1.2rem;
+
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.double-arrow-back {
+  height: 0.8rem;
+  stroke: #81f495;
+  fill: #81f495;
+}
+
+.back:hover {
+  width: 4.3rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.banner {
+  width: 100vw;
+  height: 10rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.banner-img {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.banner-text {
+  margin-left: 10%;
+}
+
+.banner-text h1 {
+  font-family: "Space Mono", sans-serif;
+  font-size: 3rem;
+}
+
+.banner-text h3 {
+  font-size: 1rem;
+}
+
+.source {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.source a {
+  font-size: 0.8rem;
+  color: #81f495;
+  padding: 0.4rem 0.8rem;
+  margin-left: 2.4rem;
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+.source a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0rem 2.4rem;
+  padding: 1.2rem 1.2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.content h3 {
+  font-family: "Space Mono", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+  padding: 0.6rem 1.2rem;
+}
+
+.content p {
+  margin-top: -1rem;
+  font-size: 1rem;
+  padding: 1.2rem 1.2rem;
+}

@@ -7,7 +7,7 @@
 
     <title>Zach Vincent</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <script defer src="app.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,10 +23,7 @@
   </head>
   <body>
     <div class="jumbotron">
-      <img
-        class="jumbotron-img"
-        src="https://www.animotica.com/blog/wp-content/uploads/2020/06/16-92-1024x576.jpg"
-      />
+      <img class="jumbotron-img" src="images/test_jumbotron_photo.jpg" />
       <div class="wrapper">
         <h1 class="name">Zachary Vincent</h1>
         <h2 class="title">Computer Engineering Student</h2>
@@ -63,7 +60,7 @@
     </div>
 
     <div class="cards">
-      <div class="card">
+      <a class="card" href="./render-engine.html">
         <h4>Basic 3D render engine</h4>
 
         <p>
@@ -91,16 +88,19 @@
             d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
           />
         </svg>
-      </div>
+      </a>
 
-      <div class="card">
+      <a class="card">
         <h4>Drone control with OpenCV</h4>
 
-        <p>OpenCV code for recognizing and tracking a red weather balloon in air. A fixed-wing UAV corrects its position to fly toward the balloon.</p>
+        <p>
+          OpenCV code for recognizing and tracking a red weather balloon in air.
+          A fixed-wing UAV corrects its position to fly toward the balloon.
+        </p>
 
         <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">Mavlink</span>
+          <span class="tag">Python</span>
+          <span class="tag">Mavlink</span>
         </div>
 
         <svg
@@ -117,11 +117,13 @@
             d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
           />
         </svg>
-      </div>
+      </a>
     </div>
 
-    <footer>
-      
-    </footer>
+    <div class="coursework">
+      <!--TODO: RELEVANT COURSEWORK-->
+    </div>
+
+    <footer></footer>
   </body>
 </html>

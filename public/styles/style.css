@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Space+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Space+Mono&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,7 +9,7 @@ body {
   background-color: #121619;
 
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 62.5%;
 
   overflow-x: hidden;
@@ -34,6 +34,8 @@ body {
   object-fit: cover;
   z-index: -1;
   opacity: 0.6;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .wrapper {
@@ -76,7 +78,7 @@ body {
 .title {
   margin-top: -1rem;
 
-  font-family: 'Space Mono', sans-serif;
+  font-family: "Space Mono", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -167,10 +169,10 @@ CARDS
 */
 
 .cards {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .card {
@@ -181,7 +183,7 @@ CARDS
   width: clamp(20rem, 15vw, 22rem);
   height: clamp(25rem, 20vw, 27rem);
   background-image: linear-gradient(135deg, #121619, #121619, #81f495);
-  
+
   /* E4DEE4 */
 
   background-size: 500%;
@@ -189,14 +191,15 @@ CARDS
   padding: 1rem;
 
   color: #121619;
+  text-decoration: none;
 
   transition: all 250ms ease;
   -moz-transition: all 250ms ease;
 }
 
 .card h4 {
-  color: #E4DEE4;
-  font-family: 'Space Mono', sans-serif;
+  color: #e4dee4;
+  font-family: "Space Mono", sans-serif;
   font-size: 2rem;
   line-height: 1.8rem;
 }
@@ -207,7 +210,7 @@ CARDS
   line-height: 2rem;
   font-size: 1rem;
   opacity: 0;
-  
+
   transition: all 250ms ease;
 }
 
@@ -269,7 +272,6 @@ CARDS
   right: 2px;
   opacity: 1;
 }
-
 
 /*
 FOOTER

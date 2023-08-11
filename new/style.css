@@ -1,0 +1,79 @@
+:root {
+    --citron: #DDCA7D;
+    --space: #242331;
+    --lion: #B88B4A;
+    --golden: #A27035;
+    --cafe: #533E2D;
+    --off-white: #F3F3F7;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.landing {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242331;
+    position: relative;
+}
+
+#logo path {
+    stroke-dasharray: 443;
+    stroke-dashoffset: 443;
+
+    fill: #242331;
+    animation: line-animation 2s ease-out forwards;
+    stroke: var(--lion);
+}
+
+#logo {
+    z-index: 1;
+}
+
+.intro {
+    color: #1A1924;
+    position: absolute;
+    left: 13%;
+    top: 18%;
+    font-size: 6rem;
+    font-weight: heavy;
+    font-family: sans-serif;
+    opacity: 0;
+    animation: slide-in 1s forwards;
+    animation-delay: 2s;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*
+ANIMATIONS
+*/
+
+@keyframes line-animation {
+    50% {
+        stroke-dashoffset: 0;
+        fill: #242331
+    }
+
+    66% {
+        stroke-dashoffset: 0;
+        fill: #DDC6A7;
+    }
+
+    100% {
+        fill: #DDC6A7;
+    }
+}
+
+@keyframes slide-in {
+    100% {
+        transform: translate(0, -1rem);
+        opacity: 100;
+    }
+}

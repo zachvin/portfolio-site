@@ -14,13 +14,18 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/*
+LANDING PAGE
+*/
+
 .landing {
     height: 100vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #242331;
+    background-color: var(--space);
     position: relative;
 }
 
@@ -28,7 +33,7 @@ body {
     stroke-dasharray: 443;
     stroke-dashoffset: 443;
 
-    fill: #242331;
+    fill: var(--space);
     animation: line-animation 2s ease-out forwards;
     stroke: var(--lion);
 }
@@ -40,8 +45,7 @@ body {
 .intro {
     color: #1A1924;
     position: absolute;
-    left: 13%;
-    top: 18%;
+    transform: translate(-50%, -50%);
     font-size: 6rem;
     font-weight: heavy;
     font-family: sans-serif;
@@ -49,6 +53,30 @@ body {
     animation: slide-in 1s forwards;
     animation-delay: 2s;
     font-family: 'Poppins', sans-serif;
+}
+
+.whatido {
+    color: var(--off-white);
+    font-size: 2rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 5rem;
+
+    opacity: 0;
+    animation: slide-up 0.5s forwards;
+    animation-delay: 2.5s;
+}
+
+.whatido-arrow {
+    fill: var(--golden);
+    position: relative;
+    left: 1rem;
+
+    height: 1.6rem;
+    width: 1.6rem;
+    opacity: 0;
+    animation: slide-down 0.6s forwards;
+    animation-delay: 4s;
 }
 
 /*
@@ -73,7 +101,21 @@ ANIMATIONS
 
 @keyframes slide-in {
     100% {
-        transform: translate(0, -1rem);
+        transform: translate(-40%, -50%);
+        opacity: 100;
+    }
+}
+
+@keyframes slide-up {
+    100% {
+        transform: translate(0, -10%);
+        opacity: 100;
+    }
+}
+
+@keyframes slide-down {
+    100% {
+        transform: translate(0, 12%);
         opacity: 100;
     }
 }

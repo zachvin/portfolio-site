@@ -1,10 +1,13 @@
 :root {
     --citron: #DDCA7D;
     --space: #242331;
+    --light-space: #343348;
     --lion: #B88B4A;
+    --light-lion: #DDC6A7;
     --golden: #A27035;
     --cafe: #533E2D;
     --off-white: #F3F3F7;
+    --accent-red: #F15025;
 }
 
 body {
@@ -14,12 +17,18 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /*
 LANDING PAGE
 */
 
 .landing {
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -59,8 +68,8 @@ LANDING PAGE
     color: var(--off-white);
     font-size: 2rem;
     position: absolute;
-    bottom: 1rem;
-    left: 5rem;
+    bottom: 2rem;
+    left: 3rem;
 
     opacity: 0;
     animation: slide-up 0.5s forwards;
@@ -80,6 +89,100 @@ LANDING PAGE
 }
 
 /*
+BLURB
+*/
+
+.blurb {
+    width: 35rem;
+    flex-shrink: 0;
+}
+
+.blurb-title {
+    border-bottom: 2px solid var(--accent-red);
+    padding-bottom: 1rem;
+    width: 17rem;
+
+    color: var(--off-white);
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.blurb-body {
+    margin-top: 1rem;
+
+    line-height: 2rem;
+    color: var(--off-white);
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+/* specific blurbs */
+.blurb-here {
+    margin-left: 7rem;
+}
+
+.featured {
+    background-color: var(--light-space);
+    height: 35rem;
+    padding-top: 5rem;
+    display: flex;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 3rem;
+    padding: 0 6rem;
+    height: 80%;
+
+    color: var(--off-white);
+}
+
+.featured-title {
+    grid-column: 1 / span 3;
+    border-bottom: 2px solid var(--accent-red);
+    padding-bottom: 1rem;
+    width: 20rem;
+
+    color: var(--off-white);
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.project-card {
+    background-color: var(--space);
+    border: 2px solid var(--space);
+    padding: 1rem;
+    flex-grow: 0;
+
+    transition: all 0.4s;
+}
+
+.project-card:hover {
+    background-color: var(--off-white);
+    border: 2px solid var(--accent-red);
+    transform: scale(1.05) rotate(1deg);
+
+    color: var(--space);
+    cursor: pointer;
+}
+
+.project-card:active {
+    transform: rotate(-2deg);
+}
+
+.project-card-title {
+    height: 7rem;
+    font-size: 1.4rem;
+}
+
+.project-card-body {
+
+    font-size: 1rem;
+}
+
+/*
 ANIMATIONS
 */
 
@@ -91,11 +194,11 @@ ANIMATIONS
 
     66% {
         stroke-dashoffset: 0;
-        fill: #DDC6A7;
+        fill: var(--light-lion);
     }
 
     100% {
-        fill: #DDC6A7;
+        fill: var(--light-lion);
     }
 }
 

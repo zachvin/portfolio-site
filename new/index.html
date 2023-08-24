@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Work+Sans:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-    <link href="style.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
   </head>
   <body>
     <div class="landing">
@@ -33,54 +33,74 @@
 
       <p class="whatido">
         I study computer engineering at the University of Notre Dame
-  
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="whatido-arrow"
-        xml:space="preserve"
-        width="512"
-        height="298"
-        shape-rendering="geometricPrecision"
-        text-rendering="geometricPrecision"
-        image-rendering="optimizeQuality"
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        viewBox="0 0 512 298.04"
-      >
-        <path
-          fill-rule="nonzero"
-          d="M12.08 70.78c-16.17-16.24-16.09-42.54.15-58.7 16.25-16.17 42.54-16.09 58.71.15L256 197.76 441.06 12.23c16.17-16.24 42.46-16.32 58.71-.15 16.24 16.16 16.32 42.46.15 58.7L285.27 285.96c-16.24 16.17-42.54 16.09-58.7-.15L12.08 70.78z"
-        />
-      </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="whatido-arrow"
+          xml:space="preserve"
+          width="512"
+          height="298"
+          shape-rendering="geometricPrecision"
+          text-rendering="geometricPrecision"
+          image-rendering="optimizeQuality"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          viewBox="0 0 512 298.04"
+        >
+          <path
+            fill-rule="nonzero"
+            d="M12.08 70.78c-16.17-16.24-16.09-42.54.15-58.7 16.25-16.17 42.54-16.09 58.71.15L256 197.76 441.06 12.23c16.17-16.24 42.46-16.32 58.71-.15 16.24 16.16 16.32 42.46.15 58.7L285.27 285.96c-16.24 16.17-42.54 16.09-58.7-.15L12.08 70.78z"
+          />
+        </svg>
       </p>
     </div>
-    
 
     <section class="featured">
       <div class="blurb blurb-here">
         <h4 class="blurb-title">while you're here...</h4>
-        <p class="blurb-body">I work on a lot of passion projects and I'd love for you to take a look at them. As a third-year computer engineering student, I'm interested in robotics, autonomous vehicles, and using machine learning to interact with computers in more natural ways. I currently serve as the Principal Investigator for NASA-funded research at the University.</p>
+        <p class="blurb-body">
+          I work on a lot of passion projects and I'd love for you to take a
+          look at them. As a third-year computer engineering student, I'm
+          interested in robotics, autonomous vehicles, and using machine
+          learning to interact with computers in more natural ways. I currently
+          serve as the Principal Investigator for NASA-funded research at the
+          University.
+        </p>
       </div>
 
       <div class="featured-grid">
         <h4 class="featured-title">my favorite projects:</h4>
-        <div class="project-card">
-          <h4 class="project-card-title">Autonomous path planning of non-holonomic vehicles</h4>
-          <p class="project-card-body">As part of my research, I am learning about and developing software that uses computer vision to guide an autonomous plane toward a target for midflight package collection.</p>
-        </div>
+        <a href="projects/path-planning.html" class="project-link">
+          <div class="project-card">
+            <h4 class="project-card-title">
+              Autonomous path planning of non-holonomic vehicles
+            </h4>
+            <p class="project-card-body">
+              As part of my research, I am learning about and developing
+              software that uses computer vision to guide an autonomous plane
+              toward a target for midflight package collection.
+            </p>
+          </div>
+        </a>
 
         <div class="project-card">
           <h4 class="project-card-title">Basic 3D render engine with C++</h4>
-          <p class="project-card-body">An extension of a class final project previously written in C, this basic render engine helps me learn C++ and understand the relationship between the 3D and 2D planes.</p>
+          <p class="project-card-body">
+            An extension of a class final project previously written in C, this
+            basic render engine helps me learn C++ and understand the
+            relationship between the 3D and 2D planes.
+          </p>
         </div>
 
         <div class="project-card">
           <h4 class="project-card-title">Web design portfolio</h4>
-          <p class="project-card-body">I enjoy designing sites as a hobby and I have created several concept sites as I developed my skills.</p>
+          <p class="project-card-body">
+            I enjoy designing sites as a hobby and I have created several
+            concept sites as I developed my skills.
+          </p>
         </div>
       </div>
     </section>
-
 
     <script type="module" src="app.js"></script>
   </body>

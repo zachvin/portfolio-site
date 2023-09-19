@@ -2,6 +2,7 @@
     --citron: #DDCA7D;
     --space: #242331;
     --light-space: #343348;
+    --bright-space: #727099;
     --lion: #B88B4A;
     --light-lion: #DDC6A7;
     --golden: #A27035;
@@ -52,7 +53,7 @@ LANDING PAGE
 }
 
 .intro {
-    color: #1A1924;
+    color: var(--bright-space);
     position: absolute;
     transform: translate(-50%, -50%);
     font-size: 6rem;

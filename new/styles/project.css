@@ -41,7 +41,6 @@ TITLE
 .title {
     width: 100rem;
     min-width: 60rem;
-    overflow: hidden;
 
     color: var(--off-white);
     font-size: 5rem;
@@ -126,6 +125,49 @@ footer {
     height: 7rem;
     background-color: var(--space);
     margin-top: 5rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .title-section {
+        height: 40vh;
+        width: 100vw;
+    }
+    .title {
+        font-size: 1.6rem;
+        min-width: 100vw;
+        padding-bottom: 1rem;
+    }
+
+    .details {
+        width: 90vw;
+        height: 5rem;
+    }
+
+    .details-title {
+        font-size: 1rem;
+    }
+
+    .details-pair {
+        font-size: 0.8rem;
+    }
+
+    .description {
+        margin-top: -1rem;
+    }
+
+    .description-container {
+        padding: 0.8rem;
+        margin: 0;
+    }
+
+    .description-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .description-container p {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+    }
 }
 
 /*

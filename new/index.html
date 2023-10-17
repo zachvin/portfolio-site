@@ -1,115 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zach Vincent</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Work+Sans:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
     <link href="styles/style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="landing">
-      <h1 class="intro">hi, i'm</h1>
-      <svg
-        id="logo"
-        width="308"
-        height="107"
-        viewBox="0 0 308 107"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M60.207 85.28V82.78H57.707H31.0849L59.3245 45.05L59.823 44.384V43.552V29.088V26.588H57.323H5.86701H3.36701V29.088V43.808V46.308H5.86701H31.7456L3.73165 84.0459L3.23901 84.7095V85.536V100V102.5H5.73901H57.707H60.207V100V85.28ZM68.9828 44.0573L68.9757 44.0707L68.9688 44.0843C65.9495 50.0315 64.474 56.7868 64.474 64.288C64.474 71.8704 65.9478 78.7057 68.9619 84.734L68.9722 84.7545L68.9828 84.7747C72.0697 90.6763 76.2422 95.33 81.511 98.6577L81.5193 98.6629L81.5276 98.6681C86.8833 101.992 92.8033 103.652 99.23 103.652C104.862 103.652 109.929 102.514 114.356 100.159L114.364 100.155L114.373 100.15C116.563 98.9637 118.537 97.6166 120.282 96.1053V100V102.5H122.782H140.83H143.33V100V29.088V26.588H140.83H122.782H120.282V29.088V32.9086C118.521 31.4182 116.546 30.0943 114.366 28.934C110.014 26.5715 104.985 25.436 99.358 25.436C92.867 25.436 86.9126 27.0421 81.5544 30.2755L81.5461 30.2805L81.5379 30.2856C76.2527 33.5308 72.0724 38.1506 68.9828 44.0573ZM118.023 54.5968L118.03 54.6095L118.037 54.6221C119.493 57.2441 120.282 60.5168 120.282 64.544C120.282 68.562 119.497 71.8864 118.03 74.6062C116.535 77.2917 114.551 79.34 112.066 80.8072C109.545 82.2109 106.858 82.908 103.966 82.908C101.192 82.908 98.5597 82.1855 96.0316 80.7014C93.6335 79.2446 91.6289 77.1546 90.0319 74.3526C88.555 71.5313 87.778 68.1996 87.778 64.288C87.778 60.3607 88.561 57.1311 90.0179 54.504C91.6152 51.6932 93.6148 49.6504 95.9974 48.2786C98.4245 46.8811 101.065 46.18 103.966 46.18C106.843 46.18 109.521 46.9114 112.042 48.3948L112.066 48.4089L112.09 48.4224C114.544 49.7937 116.523 51.8222 118.023 54.5968ZM188.668 83.292C184.235 83.292 180.924 81.7469 178.456 78.7207C175.945 75.5573 174.528 70.9374 174.528 64.544C174.528 58.0441 175.954 53.4411 178.447 50.3782L178.456 50.3673L178.465 50.3563C180.941 47.2426 184.251 45.668 188.668 45.668C191.822 45.668 194.253 46.4495 196.128 47.856L196.168 47.8858L196.209 47.914C198.202 49.2884 199.638 51.215 200.504 53.8146L201.074 55.524H202.876H222.204H225.398L224.631 52.4238C222.55 44.0109 218.385 37.3452 212.072 32.6043C205.831 27.7671 198.01 25.436 188.796 25.436C181.586 25.436 175.089 27.0613 169.378 30.3744C163.669 33.6004 159.206 38.2134 156.007 44.1517C152.788 50.04 151.224 56.8644 151.224 64.544C151.224 72.2279 152.79 79.0904 156.003 85.0573L156.007 85.0644L156.011 85.0715C159.212 90.9259 163.672 95.5286 169.365 98.834L169.378 98.8416L169.391 98.8491C175.101 102.073 181.593 103.652 188.796 103.652C197.951 103.652 205.774 101.265 212.093 96.3398C218.367 91.4496 222.538 84.8553 224.626 76.683L225.423 73.564H222.204H202.876H201.089L200.511 75.2548C199.541 78.0897 198.09 80.0358 196.248 81.2972C194.393 82.5668 191.924 83.292 188.668 83.292ZM302.916 102.5H305.416V100V58.4C305.416 51.7047 304.168 45.8303 301.556 40.8738C299.048 35.8682 295.473 32.032 290.828 29.468C286.23 26.8448 281.021 25.564 275.268 25.564C270.257 25.564 265.631 26.521 261.432 28.4768C259.345 29.4061 257.449 30.5291 255.752 31.8484V5.28V2.78H253.252H235.332H232.832V5.28V100V102.5H235.332H253.252H255.752V100V60.832C255.752 55.5983 257.057 51.9938 259.294 49.6206C261.641 47.1348 264.862 45.796 269.252 45.796C273.543 45.796 276.667 47.1254 278.929 49.5933L278.941 49.6063L278.953 49.619C281.191 51.9923 282.496 55.5972 282.496 60.832V100V102.5H284.996H302.916Z"
-          stroke="white"
-          stroke-width="5"
-        />
-      </svg>
-
-      <p class="whatido">
-        I study computer engineering at the University of Notre Dame
-
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="whatido-arrow"
-          xml:space="preserve"
-          width="512"
-          height="298"
-          shape-rendering="geometricPrecision"
-          text-rendering="geometricPrecision"
-          image-rendering="optimizeQuality"
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          viewBox="0 0 512 298.04"
-        >
-          <path
-            fill-rule="nonzero"
-            d="M12.08 70.78c-16.17-16.24-16.09-42.54.15-58.7 16.25-16.17 42.54-16.09 58.71.15L256 197.76 441.06 12.23c16.17-16.24 42.46-16.32 58.71-.15 16.24 16.16 16.32 42.46.15 58.7L285.27 285.96c-16.24 16.17-42.54 16.09-58.7-.15L12.08 70.78z"
-          />
-        </svg>
-      </p>
+</head>
+<body>
+    <div class="header slide-in-right">
+        <h1 class="headline">Zach Vincent</h1>
+        <h2>I like learning new technologies and combining hardware and software to build new tools.</h4>
     </div>
-
-    <section class="featured">
-      <div class="blurb blurb-here">
-        <h4 class="blurb-title">while you're here...</h4>
-        <p class="blurb-body">
-          I work on a lot of passion projects and I'd love for you to take a
-          look at them. As a third-year computer engineering student, I'm
-          interested in robotics, autonomous vehicles, and using machine
-          learning to interact with computers in more natural ways. I currently
-          serve as the Principal Investigator for NASA-funded research at the
-          University.
-        </p>
-      </div>
-
-      <div class="featured-container">
-        <h4 class="featured-title">my favorite projects:</h4>
-        <div class="project-cards">
-          <a href="projects/path-planning.html" class="project-link">
-            <div class="project-card">
-              <h4 class="project-card-title">
-                Autonomous path planning of non-holonomic vehicles
-              </h4>
-              <p class="project-card-body">
-                As part of my research, I am learning about and developing
-                software that uses computer vision to guide an autonomous plane
-                toward a target for midflight package collection.
-              </p>
+    <div class="projects-container">
+        <div class="projects software">
+            <h3 class="headline slide-in-right">Software projects</h3>
+            <div class="list">
+                <a class="slide-in-down" href="projects/aruco.html">Recognizing ArUco markers with OpenCV Python, Raspberry Pi camera and NVIDIA Jetson</a>
+                <a class="slide-in-down" href="projects/autonomous-plane.html">Controlling an unmanned plane using computer vision and machine learning</a>
+                <a class="slide-in-down" href="projects/render-engine.html">Basic 3D render engine in C</a>
             </div>
-          </a>
-
-          <a href="projects/3d-engine.html" class="project-link">
-            <div class="project-card">
-              <h4 class="project-card-title">Basic 3D render engine</h4>
-              <p class="project-card-body">
-                A class final project written in C, this basic render engine
-                helped me learn the language and understand the relationship
-                between the 3D and 2D planes.
-              </p>
-            </div>
-          </a>
-
-          <a href="projects/web-design.html" class="project-link">
-            <div class="project-card">
-              <h4 class="project-card-title">Web design portfolio</h4>
-              <p class="project-card-body">
-                I enjoy designing sites as a hobby and I have created several
-                concept sites as I developed my skills.
-              </p>
-            </div>
-          </a>
         </div>
-      </div>
-    </section>
-
-    <footer></footer>
-
-    <script type="module" src="app.js"></script>
-  </body>
+        <div class="projects hardware">
+            <h3 class="headline slide-in-right">Hardware projects</h3>
+            <div class="list">
+                <a class="slide-in-down" href="projects/nand.html">Designing transistor-level NAND/NOR circuits with Cadence Virtuoso and Spectre</a>
+            </div>
+        </div>
+    </div>
+    <div class="socials-container">
+        <a href="https://github.com/zachvin" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 640 640"><path d="M319.988 7.973C143.293 7.973 0 151.242 0 327.96c0 141.392 91.678 261.298 218.826 303.63 16.004 2.964 21.886-6.957 21.886-15.414 0-7.63-.319-32.835-.449-59.552-89.032 19.359-107.8-37.772-107.8-37.772-14.552-36.993-35.529-46.831-35.529-46.831-29.032-19.879 2.209-19.442 2.209-19.442 32.126 2.245 49.04 32.954 49.04 32.954 28.56 48.922 74.883 34.76 93.131 26.598 2.882-20.681 11.15-34.807 20.315-42.803-71.08-8.067-145.797-35.516-145.797-158.14 0-34.926 12.52-63.485 32.965-85.88-3.33-8.078-14.291-40.606 3.083-84.674 0 0 26.87-8.61 88.029 32.8 25.512-7.075 52.878-10.642 80.056-10.76 27.2.118 54.614 3.673 80.162 10.76 61.076-41.386 87.922-32.8 87.922-32.8 17.398 44.08 6.485 76.631 3.154 84.675 20.516 22.394 32.93 50.953 32.93 85.879 0 122.907-74.883 149.93-146.117 157.856 11.481 9.921 21.733 29.398 21.733 59.233 0 42.792-.366 77.28-.366 87.804 0 8.516 5.764 18.473 21.992 15.354 127.076-42.354 218.637-162.274 218.637-303.582 0-176.695-143.269-319.988-320-319.988l-.023.107z"/></svg></a>
+        <a href="https://linkedin.com/in/zachv" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 509.64"><rect width="512" height="509.64" rx="115.61" ry="115.61"/><path fill="#fff" d="M204.97 197.54h64.69v33.16h.94c9.01-16.16 31.04-33.16 63.89-33.16 68.31 0 80.94 42.51 80.94 97.81v116.92h-67.46l-.01-104.13c0-23.81-.49-54.45-35.08-54.45-35.12 0-40.51 25.91-40.51 52.72v105.86h-67.4V197.54zm-38.23-65.09c0 19.36-15.72 35.08-35.08 35.08-19.37 0-35.09-15.72-35.09-35.08 0-19.37 15.72-35.08 35.09-35.08 19.36 0 35.08 15.71 35.08 35.08zm-70.17 65.09h70.17v214.73H96.57V197.54z"/></svg></a>
+    </div>
+    <script type="module" src="app.js"></script> 
+</body>
 </html>

@@ -1,0 +1,28 @@
+{
+    "projects": [
+        {
+            "path": "projects/pendulum.html",
+            "desc": "Deep reinforcement learning to balance a pendulum"
+        },
+        {
+            "path": "projects/ai-assignments.html",
+            "desc": "Intro to AI assignments portfolio"
+        },
+        {
+            "path": "projects/aruco.html",
+            "desc": "Standalone visual positioning system with OpenCV Python, Raspberry Pi camera and NVIDIA Jetson"
+        },
+        {
+            "path": "projects/render-engine.html",
+            "desc": "Basic 3D render engine in C"
+        },
+        {
+            "path": "projects/taxi.html",
+            "desc": "Visualizing the impact of COVID-19 on NYC taxis"
+        },
+        {
+            "path": "clicker/index.html",
+            "desc": "Building a Cookie Clicker clone to learn JS"
+        }
+    ]
+}

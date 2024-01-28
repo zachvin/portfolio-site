@@ -1,0 +1,16 @@
+{
+  "name": "app.js",
+  "version": "1.0.0",
+  "description": "scripts for loading text into site",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zach Vincent",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "jsdom": "^23.0.1"
+  }
+}

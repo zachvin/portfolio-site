@@ -9,27 +9,52 @@
   <body>
     <div class="header">
       <h3><a href="../index.html">HOME</a> / ARUCO</h3>
-      <h1 class="headline">Using OpenCV to recognize ArUco markers</h1>
+      <h1 class="headline">Computer vision for autonomous planes</h1>
       <h2>
         A step towards building a plane that autonomously flies toward a target.
       </h2>
     </div>
     <div class="description">
       <p>
-        <a href="https://github.com/zachvin/dronehook/tree/main/aruco" target="_blank"
+        <a
+          href="https://github.com/zachvin/dronehook/tree/main/aruco"
+          target="_blank"
           >See the code on GitHub</a
         >
       </p>
-      <h3 class="headline">Project summary</h3>
+      <h3 class="headline">Goals</h3>
       <p>
-        This project is the first in a series of projects to design a fully
-        autonomous plane that uses computer vision and GPS to guide itself
-        toward a package to pick up midflight. I used OpenCV Python and its
-        included ArUco module to recognize the marker with high reliability. The
-        system runs entirely within an NVIDIA Jetson Nano and a Raspberry Pi
+        This project represents one component of the Dronehook NASA grant to
+        build an autonomous plane. A successful program in this case is an
+        all-in-one software package that takes camera data as input and outputs
+        a target direction in order for the plane to correct its trajectory.
+      </p>
+
+      <h3 class="headline">Execution</h3>
+      <p>
+        Originally, I wrote the code to find a large red weather balloon. In
+        this way, the balloon could be filled with helium and the plane would
+        use it as a target. I used OpenCV Python to segment all red hues within
+        a small range and employ contour detection to find the largest circular
+        object. At altitude, there is not likely to be another large red object,
+        so I prioritized code simplicity. In the final version of the code, I
+        transitioned to using ArUco markers for their smaller size and lower
+        false positive rate. I utilized the X/Y pixel position of the marker
+        from OpenCV's Aruco marker detection module to provide guidance to the
+        plane.
+      </p>
+      <h3 class="headline">Results</h3>
+      <p>
+        The system runs entirely within an NVIDIA Jetson Nano and a Raspberry Pi
         camera with a telephoto lens. I achieved 0.22s of latency between the
         appearance of the marker and the system's recognition, with a max
-        reliable distance of 80ft.
+        reliable distance of 80ft. In addition to completing the original
+        project goals, I also integrated flight surface control via USB from the
+        NVIDIA Jetson to the system's flight controller. As a result, the plane
+        both identified and physically reacted to the target in the lab. In the
+        final stage, I mounted the camera on the plane and measured 0.22s of
+        latency between new camera frame input and movement of the plane's
+        ailerons.
       </p>
     </div>
   </body>

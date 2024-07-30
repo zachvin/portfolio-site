@@ -1,1 +1,0 @@
-$('#nav-placeholder').load('../elements/nav.html');

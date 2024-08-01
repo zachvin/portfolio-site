@@ -18,11 +18,58 @@
         <div class="projects software">
             <h3 class="headline slide-in-right">Software projects</h3>
             <div class="list">
-                <a class="slide-in-down" href="projects/pendulum.html">Balancing a pendulum with reinforcement learning and neural networks</a>
-                <a class="slide-in-down" href="projects/aruco.html">Using computer vision to control a plane</a>
-                <a class="slide-in-down" href="projects/render-engine.html">Basic 3D render engine in C</a>
-                <a class="slide-in-down" href="projects/impact-recovery.html">Controlling simulated quadcopters using PPO and actor/critic neural networks</a>
+                <a class="slide-in-down button-proj new" data-target="proj-ins" href="projects/kaggle-insurance.html">Predicting insurance responses on Kaggle (0.81311 AUROC score)</a>
+                <a class="slide-in-down button-proj" data-target="proj-imp" href="projects/impact-recovery.html">Controlling simulated quadcopters using PPO and actor/critic neural networks</a>
+                <a class="slide-in-down button-proj" data-target="proj-pen" href="projects/pendulum.html">Balancing a pendulum with reinforcement learning and neural networks</a>
+                <a class="slide-in-down button-proj" data-target="proj-aru" href="projects/aruco.html">Using computer vision to control a plane</a>
+                <a class="slide-in-down button-proj" data-target="proj-ren" href="projects/render-engine.html">Building a 3D maze game with custom render engine in C</a>
             </div>
+        </div>
+        <div class="blurbs">
+            <div class="proj-blurb" id="proj-pen">
+                <div class="tags">
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">Numpy</span>
+                    <span class="tag">Gymnasium</span>
+                    <span class="tag">Deep Q Learning</span>
+                </div>
+                <img src="img/pendulum.png" />
+            </div>
+            <div class="proj-blurb" id="proj-ren">
+                <div class="tags">
+                    <span class="tag">C</span>
+                    <span class="tag">LX11</span>
+                </div>
+                <img src="img/blockgame.png" />
+            </div>
+            <div class="proj-blurb" id="proj-aru">
+                <div class="tags">
+                    <span class="tag">OpenCV</span>
+                </div>
+                <img src="img/aruco.jpg" />
+            </div>
+            <div class="proj-blurb" id="proj-imp">
+                <div class="tags">
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">Numpy</span>
+                    <span class="tag">Gymnasium</span>
+                    <span class="tag">Proximal Policy Optimization</span>
+                </div>
+                <img src="img/pybullet.png" />
+            </div>
+            <div class="proj-blurb" id="proj-ins">
+                <div class="tags">
+                    <span class="tag">XGBoost</span>
+                    <span class="tag">sklearn</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">klib</span>
+                    <span class="tag">Optuna</span>
+                    <span class="tag">Numpy</span>
+                    <span class="tag">Random forest regressor</span>
+                </div>
+                <img src="img/kaggle-insurance.png" />
+            </div>
+            
         </div>
     </div>
     <div class="socials-container">

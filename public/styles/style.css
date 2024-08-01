@@ -17,6 +17,8 @@ body {
   font-family: "Inter", sans-serif;
   position: relative;
   height: 100vh;
+  color: #161925;
+  background-color: #F5F5F5;
 }
 
 .headline {
@@ -86,6 +88,7 @@ PROJECTS
 
 .projects {
   padding: 5rem;
+  width: 50%;
 
   font-size: 2rem;
   margin-bottom: 10rem;
@@ -120,6 +123,61 @@ PROJECTS
   background-color: #479dff;
 }
 
+.new::before {
+  content: "new!";
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #FB3640;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 6rem;
+  rotate: -20deg;
+
+  position: absolute;
+  top: -2.2rem;
+  left: -2.2rem;
+
+  font-size: 1.2rem;
+  color: white;
+
+}
+
+/*
+BLURBS
+*/
+
+.blurbs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.proj-blurb {
+  display: none;
+}
+
+.proj-blurb img {
+  max-height: 42rem;
+}
+
+.tags {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.tag {
+  padding: 2px 4px;
+  background-color: #FB3640;
+  border-radius: 4px;
+  margin: 4px;
+
+  color: #F5F5F5;
+  font-size: 1.2rem;
+}
+
 /*
 SOCIALS
 */
@@ -138,8 +196,8 @@ SOCIALS
   height: 5rem;
   margin-left: 2rem;
 
-  stroke: gray;
-  fill: gray;
+  stroke: #9AA899;
+  fill: #9AA899;
   transition: all 0.2s;
 }
 
